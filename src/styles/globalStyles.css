@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("./reset.css");
 @import url("./forms.css");
+@import url("./modal.css");
 
 main,
 div,
@@ -25,8 +26,17 @@ button {
   font-family: "Inter", sans-serif;
 }
 
+dialog {
+  padding: 0;
+  border: none;
+}
+
+dialog::backdrop {
+  background-color: rgba(0,0,0, 0.8);
+}
+
 :root {
-  --color-primary: /* definir */ ;
+  --color-primary: #1b82e9;
   --color-grey-1: #191c1f;
   --color-grey-2: #212529;
   --color-grey-3: #343a40;
